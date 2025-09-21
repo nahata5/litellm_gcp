@@ -7,6 +7,36 @@ model_list:
     litellm_params:
       model: openai/gpt-4
       api_key: os.environ/OPENAI_API_KEY
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: vertex_ai/gemini-2.5-pro # Placeholder
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
+  - model_name: gemini-2.0-flash
+    litellm_params:
+      model: vertex_ai/gemini-2.0-flash # Placeholder
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
+  - model_name: gemini-2.5-flash
+    litellm_params:
+      model: vertex_ai/gemini-2.5-flash # Placeholder
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
+  - model_name: gemini-2.5-flash-lite
+    litellm_params:
+      model: vertex_ai/gemini-2.5-flash-lite # Placeholder
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
+  # --- Third-Party Models on Vertex AI ---
+  - model_name: claude-4-sonnet
+    litellm_params:
+      model: vertex_ai/claude-sonnet-4@20250514
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
 
 litellm_settings:
   drop_params: True

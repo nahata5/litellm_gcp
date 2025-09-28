@@ -11,5 +11,5 @@ COPY litellm_config.yaml .
 # Expose the necessary port
 EXPOSE 4000/tcp
 
-# The command to run litellm. This is now part of the base image.
+# The command to run litellm. This is now part of the base image. 
 CMD ["--port", "4000", "--config", "litellm_config.yaml"]

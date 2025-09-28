@@ -12,4 +12,4 @@ COPY litellm_config.yaml .
 EXPOSE 4000/tcp
 
 # The command to run litellm. This is now part of the base image.
-CMD ["--port", "80", "--config", "litellm_config.yaml"]
+CMD ["--port", "4000", "--config", "litellm_config.yaml"]

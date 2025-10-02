@@ -3,10 +3,54 @@ general_settings:
   database_url: os.environ/DATABASE_URL
 
 model_list:
+# --- Model Group for gpt-4 ---
   - model_name: gpt-4
     litellm_params:
       model: openai/gpt-4
       api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for gpt-4.5-preview ---
+  - model_name: gpt-4.5-preview
+    litellm_params:
+      model: openai/gpt-4.5-preview  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for gpt-5 ---
+  - model_name: gpt-5
+    litellm_params:
+      model: openai/gpt-5  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for gpt-5-nano ---
+  - model_name: gpt-5-nano
+    litellm_params:
+      model: openai/gpt-5-nano  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for gpt-5-mini ---
+  - model_name: gpt-5-mini
+    litellm_params:
+      model: openai/gpt-5-mini  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for o3 ---
+  - model_name: o3
+    litellm_params:
+      model: openai/o3  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for o4-mini-deep-research ---
+  - model_name: o4-mini-deep-research
+    litellm_params:
+      model: openai/o4-mini-deep-research  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+  
+  # --- Model Group for o3-mini ---
+  - model_name: o3-mini
+    litellm_params:
+      model: openai/o3-mini  # Assuming the OpenAI model name structure
+      api_key: os.environ/OPENAI_API_KEY
+
   - model_name: gemini-2.5-pro
     litellm_params:
       model: vertex_ai/gemini-2.5-pro # Placeholder
@@ -31,13 +75,30 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 
-  # --- Third-Party Models on Vertex AI ---
-  - model_name: claude-4-sonnet
+  - model_name: gemini-2.0-flash-lite
     litellm_params:
-      model: vertex_ai/claude-sonnet-4@20250514
+      model: vertex_ai/gemini-2.0-flash-lite-001 # Placeholder
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 
+  - model_name: deepseek-v3.1
+    litellm_params:
+      model: vertex_ai/deepseek-ai/deepseek-v3.1-maas # Placeholder
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
+  - model_name: qwen3-next-80b
+    litellm_params:
+      model: vertex_ai/qwen/qwen3-next-80b-a3b-thinking-maas
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "global"
+
+  # --- Third-Party Models on Vertex AI ---
+  - model_name: claude-4-5-sonnet
+    litellm_params:
+      model: vertex_ai/claude-sonnet-4-5@20250929
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "global"
+
 litellm_settings:
   drop_params: True
-  set_verbose: True

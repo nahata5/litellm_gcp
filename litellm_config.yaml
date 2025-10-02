@@ -95,22 +95,45 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 
+  - model_name: imagen-4.0
+    litellm_params:
+      model: vertex_ai/imagen-4.0-generate-001
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
+    - model_name: nano-banana
+    litellm_params:
+      model: vertex_ai/gemini-2.5-flash-image
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
   - model_name: deepseek-v3.1
     litellm_params:
       model: vertex_ai/deepseek-ai/deepseek-v3.1-maas # Placeholder
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "global"
+      vertex_location: "us-central1"
 
   - model_name: qwen3-next-80b
     litellm_params:
       model: vertex_ai/qwen/qwen3-next-80b-a3b-thinking-maas
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+  - model_name: qwen3-instruct-80b
+    litellm_params:
+      model: vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "global"
 
-  # --- Third-Party Models on Vertex AI ---
+# --- Third-Party Models on Vertex AI ---
   - model_name: claude-4-5-sonnet
     litellm_params:
       model: vertex_ai/claude-sonnet-4-5@20250929
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "global"
+
+  - model_name: claude-4-sonnet
+    litellm_params:
+      model: vertex_ai/claude-sonnet-4@20250514
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
   

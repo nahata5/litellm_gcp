@@ -110,6 +110,12 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 
+  - model_name: gemini-text-embedding
+    litellm_params:
+      model: publishers/google/models/gemini-embedding-001
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "us-central1"
+
   - model_name: nano-banana
     litellm_params:
       model: vertex_ai/gemini-2.5-flash-image

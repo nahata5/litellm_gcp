@@ -106,7 +106,7 @@ model_list:
 
   - model_name: imagen-4.0
     litellm_params:
-      model: vertext_ai/publishers/google/models/imagen-4.0-generate-001
+      model: vertex_ai/imagen-4.0-generate-001
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 

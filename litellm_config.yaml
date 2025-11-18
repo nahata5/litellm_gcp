@@ -75,9 +75,9 @@ model_list:
       model: openai/o3-mini  # Assuming the OpenAI model name structure
       api_key: os.environ/OPENAI_API_KEY
 
-  - model_name: gemini-3.0-pro
+  - model_name: gemini-3-pro
     litellm_params:
-      model: vertex_ai/gemini-3.0-pro-preview # Placeholder
+      model: vertex_ai/gemini-3-pro-preview # Placeholder
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
       

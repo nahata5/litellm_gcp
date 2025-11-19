@@ -133,7 +133,7 @@ model_list:
     litellm_params:
       model: vertex_ai/deepseek-ai/deepseek-v3.1-maas # Placeholder
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "us-central1"
+      vertex_location: "global"
 
   - model_name: qwen3-next-80b
     litellm_params:

@@ -193,7 +193,7 @@ model_list:
     litellm_params:
       model: vertex_ai/agent_engine/projects/1038026600293/locations/us-central1/reasoningEngines/7322054748662661120
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "global"
+      vertex_location: "us-central1"
 
 
 

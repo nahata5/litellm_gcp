@@ -188,6 +188,14 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
 
+# --- Agents on Vertex AI ---
+  - model_name: academic-research
+    litellm_params:
+      model: vertex_ai/agent_engine/projects/1038026600293/locations/us-central1/reasoningEngines/7322054748662661120
+      vertex_project: os.environ/PROJECT_ID
+      vertex_location: "global"
+
+
 
 litellm_settings:
   drop_params: True

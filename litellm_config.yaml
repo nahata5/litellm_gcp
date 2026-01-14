@@ -212,6 +212,11 @@ model_list:
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
 
+agents:
+  - agent_name: "academic-research-agent"
+    model: "academic-research"
+    max_loops: 8
+
 
 
 litellm_settings:

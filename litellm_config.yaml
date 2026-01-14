@@ -143,13 +143,13 @@ model_list:
     litellm_params:
       model: publishers/google/models/gemini-embedding-001
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "global"
+      vertex_location: "us-central1"
   
   - model_name: gemini-embedding
     litellm_params:
       model: vertex_ai/gemini-embedding-001
       vertex_project: os.environ/PROJECT_ID
-      vertex_location: "global"
+      vertex_location: "us-central1"
 
   - model_name: nano-banana
     litellm_params:

@@ -4,6 +4,8 @@ FROM ghcr.io/berriai/litellm-database:main-stable
 # Set the working directory to /app
 WORKDIR /app
 
+# Install the missing a2a-sdk dependency required by the A2A endpoint
+RUN pip install --no-cache-dir a2a-sdk
 
 # Copy the configuration file into the container at /app
 COPY litellm_config.yaml .

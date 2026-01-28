@@ -50,11 +50,13 @@ model_list:
     litellm_params:
       model: openai/gpt-4o
       api_key: os.environ/OPENAI_API_KEY
+      web_search_options: {}
   # --- Model Group for gpt-5 ---
   - model_name: gpt-5
     litellm_params:
       model: openai/gpt-5  # Assuming the OpenAI model name structure
       api_key: os.environ/OPENAI_API_KEY
+      web_search_options: {}
   # --- Model Group for gpt-5-nano ---
   - model_name: gpt-5-nano
     litellm_params:
@@ -85,18 +87,21 @@ model_list:
     litellm_params:
       model: openai/gpt-5.2-pro # Assuming the OpenAI model name structure
       api_key: os.environ/OPENAI_API_KEY
+      web_search_options: {}
 
   - model_name: gemini-3-pro
     litellm_params:
       model: vertex_ai/gemini-3-pro-preview # Placeholder
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
   
   - model_name: gemini-3-flash
     litellm_params:
       model: vertex_ai/gemini-3-flash-preview # Placeholder
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
 
   - model_name: gemini-3-pro-image
     litellm_params:
@@ -109,12 +114,14 @@ model_list:
       model: vertex_ai/gemini-2.5-pro # Placeholder
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
+      web_search_options: {}
 
   - model_name: gemini-2.0-flash
     litellm_params:
       model: vertex_ai/gemini-2.0-flash # Placeholder
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "us-central1"
+      web_search_options: {}
 
   - model_name: gemini-2.5-flash
     litellm_params:
@@ -181,30 +188,35 @@ model_list:
       model: vertex_ai/claude-opus-4-5@20251101
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
   
   - model_name: claude-4-1-opus
     litellm_params:
       model: vertex_ai/claude-opus-4-1@20250805
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
   
   - model_name: claude-4-5-sonnet
     litellm_params:
       model: vertex_ai/claude-sonnet-4-5@20250929
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
 
   - model_name: claude-4-sonnet
     litellm_params:
       model: vertex_ai/claude-sonnet-4@20250514
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
   
   - model_name: claude-4-5-haiku
     litellm_params:
       model: vertex_ai/claude-haiku-4-5@20251001
       vertex_project: os.environ/PROJECT_ID
       vertex_location: "global"
+      web_search_options: {}
 
 # --- Agents on Vertex AI ---
   - model_name: academic-research

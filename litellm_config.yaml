@@ -204,11 +204,11 @@ model_list:
       vertex_location: "global"
       
 
-  - model_name: claude-4-sonnet
-    litellm_params:
-      model: vertex_ai/claude-sonnet-4@20250514
-      vertex_project: os.environ/PROJECT_ID
-      vertex_location: "global"
+  # - model_name: claude-4-sonnet
+  #   litellm_params:
+  #     model: vertex_ai/claude-sonnet-4@20250514
+  #     vertex_project: os.environ/PROJECT_ID
+  #     vertex_location: "global"
       
   
   - model_name: claude-4-5-haiku
@@ -219,12 +219,6 @@ model_list:
       
 
 # --- Agents on Vertex AI ---
-  - model_name: academic-research
-    litellm_params:
-      model: vertex_ai/agent_engine/projects/1038026600293/locations/us-central1/reasoningEngines/7322054748662661120
-      vertex_project: os.environ/PROJECT_ID
-      vertex_location: "us-central1"
-
 agents:
   - agent_name: "academic-research-agent"
     model: "academic-research"

@@ -215,6 +215,7 @@ model_list:
     litellm_params:
       model: vertex_ai/claude-haiku-4-5@20251001
       vertex_project: os.environ/PROJECT_ID
+      vertex_location: "global"
       
 
 # --- Agents on Vertex AI ---
